@@ -19,9 +19,14 @@ UNITS = [
 
 def _headers() -> dict:
     return {
-        "Auth-Token": os.environ["ONTRACK_AUTH_TOKEN"],
-        "Username":   os.environ["ONTRACK_USERNAME"],
-        "Accept":     "application/json",
+        "Auth-Token":       os.environ["ONTRACK_AUTH_TOKEN"],
+        "Username":         os.environ["ONTRACK_USERNAME"],
+        "Accept":           "application/json",
+        "Accept-Language":  "en-AU,en;q=0.9",
+        "Referer":          "https://ontrack.deakin.edu.au/",
+        "Origin":           "https://ontrack.deakin.edu.au",
+        "User-Agent":       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
     }
 
 
