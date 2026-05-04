@@ -6,6 +6,9 @@ BASE_URL = "https://ontrack.deakin.edu.au/api"
 
 GRADE_MAP = {0: "P", 1: "C", 2: "D", 3: "HD"}
 
+SUBMITTED_STATUSES = {"ready_for_feedback"}
+FEEDBACK_STATUSES  = {"discuss", "do_not_resubmit", "redo", "fix_and_resubmit", "complete", "fail"}
+
 UNITS = [
     {"name": "SIT199", "project_id": 160857},
     {"name": "SIT310", "project_id": 157493},
